@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5360F0C82B8EA94A00F947AB /* Embrace_ESGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0C72B8EA94A00F947AB /* Embrace_ESGApp.swift */; };
+		5360F0CA2B8EA94A00F947AB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0C92B8EA94A00F947AB /* Persistence.swift */; };
+		5360F0CD2B8EA94A00F947AB /* Embrace_ESG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0CB2B8EA94A00F947AB /* Embrace_ESG.xcdatamodeld */; };
+		5360F0CF2B8EA94A00F947AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0CE2B8EA94A00F947AB /* ContentView.swift */; };
+		5360F0D12B8EA94B00F947AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5360F0D02B8EA94B00F947AB /* Assets.xcassets */; };
+		5360F0D52B8EA94B00F947AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5360F0D42B8EA94B00F947AB /* Preview Assets.xcassets */; };
+		5360F0DF2B8EA94C00F947AB /* Embrace_ESGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0DE2B8EA94C00F947AB /* Embrace_ESGTests.swift */; };
+		5360F0E92B8EA94C00F947AB /* Embrace_ESGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0E82B8EA94C00F947AB /* Embrace_ESGUITests.swift */; };
+		5360F0EB2B8EA94C00F947AB /* Embrace_ESGUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0EA2B8EA94C00F947AB /* Embrace_ESGUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5360F0DB2B8EA94C00F947AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5360F0BC2B8EA94A00F947AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5360F0C32B8EA94A00F947AB;
+			remoteInfo = "Embrace ESG";
+		};
+		5360F0E52B8EA94C00F947AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5360F0BC2B8EA94A00F947AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5360F0C32B8EA94A00F947AB;
+			remoteInfo = "Embrace ESG";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5360F0C42B8EA94A00F947AB /* Embrace ESG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Embrace ESG.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5360F0C72B8EA94A00F947AB /* Embrace_ESGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Embrace_ESGApp.swift; sourceTree = "<group>"; };
+		5360F0C92B8EA94A00F947AB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5360F0CC2B8EA94A00F947AB /* Embrace_ESG.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Embrace_ESG.xcdatamodel; sourceTree = "<group>"; };
+		5360F0CE2B8EA94A00F947AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5360F0D02B8EA94B00F947AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5360F0D22B8EA94B00F947AB /* Embrace_ESG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Embrace_ESG.entitlements; sourceTree = "<group>"; };
+		5360F0D42B8EA94B00F947AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5360F0DA2B8EA94C00F947AB /* Embrace ESGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Embrace ESGTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5360F0DE2B8EA94C00F947AB /* Embrace_ESGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Embrace_ESGTests.swift; sourceTree = "<group>"; };
+		5360F0E42B8EA94C00F947AB /* Embrace ESGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Embrace ESGUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5360F0E82B8EA94C00F947AB /* Embrace_ESGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Embrace_ESGUITests.swift; sourceTree = "<group>"; };
+		5360F0EA2B8EA94C00F947AB /* Embrace_ESGUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Embrace_ESGUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5360F0C12B8EA94A00F947AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5360F0D72B8EA94C00F947AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5360F0E12B8EA94C00F947AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5360F0BB2B8EA94A00F947AB = {
+			isa = PBXGroup;
+			children = (
+				5360F0C62B8EA94A00F947AB /* Embrace ESG */,
+				5360F0DD2B8EA94C00F947AB /* Embrace ESGTests */,
+				5360F0E72B8EA94C00F947AB /* Embrace ESGUITests */,
+				5360F0C52B8EA94A00F947AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5360F0C52B8EA94A00F947AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5360F0C42B8EA94A00F947AB /* Embrace ESG.app */,
+				5360F0DA2B8EA94C00F947AB /* Embrace ESGTests.xctest */,
+				5360F0E42B8EA94C00F947AB /* Embrace ESGUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5360F0C62B8EA94A00F947AB /* Embrace ESG */ = {
+			isa = PBXGroup;
+			children = (
+				5360F0C72B8EA94A00F947AB /* Embrace_ESGApp.swift */,
+				5360F0C92B8EA94A00F947AB /* Persistence.swift */,
+				5360F0CE2B8EA94A00F947AB /* ContentView.swift */,
+				5360F0D02B8EA94B00F947AB /* Assets.xcassets */,
+				5360F0D22B8EA94B00F947AB /* Embrace_ESG.entitlements */,
+				5360F0CB2B8EA94A00F947AB /* Embrace_ESG.xcdatamodeld */,
+				5360F0D32B8EA94B00F947AB /* Preview Content */,
+			);
+			path = "Embrace ESG";
+			sourceTree = "<group>";
+		};
+		5360F0D32B8EA94B00F947AB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5360F0D42B8EA94B00F947AB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5360F0DD2B8EA94C00F947AB /* Embrace ESGTests */ = {
+			isa = PBXGroup;
+			children = (
+				5360F0DE2B8EA94C00F947AB /* Embrace_ESGTests.swift */,
+			);
+			path = "Embrace ESGTests";
+			sourceTree = "<group>";
+		};
+		5360F0E72B8EA94C00F947AB /* Embrace ESGUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5360F0E82B8EA94C00F947AB /* Embrace_ESGUITests.swift */,
+				5360F0EA2B8EA94C00F947AB /* Embrace_ESGUITestsLaunchTests.swift */,
+			);
+			path = "Embrace ESGUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5360F0C32B8EA94A00F947AB /* Embrace ESG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5360F0EE2B8EA94C00F947AB /* Build configuration list for PBXNativeTarget "Embrace ESG" */;
+			buildPhases = (
+				5360F0C02B8EA94A00F947AB /* Sources */,
+				5360F0C12B8EA94A00F947AB /* Frameworks */,
+				5360F0C22B8EA94A00F947AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Embrace ESG";
+			productName = "Embrace ESG";
+			productReference = 5360F0C42B8EA94A00F947AB /* Embrace ESG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5360F0D92B8EA94C00F947AB /* Embrace ESGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5360F0F12B8EA94C00F947AB /* Build configuration list for PBXNativeTarget "Embrace ESGTests" */;
+			buildPhases = (
+				5360F0D62B8EA94C00F947AB /* Sources */,
+				5360F0D72B8EA94C00F947AB /* Frameworks */,
+				5360F0D82B8EA94C00F947AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5360F0DC2B8EA94C00F947AB /* PBXTargetDependency */,
+			);
+			name = "Embrace ESGTests";
+			productName = "Embrace ESGTests";
+			productReference = 5360F0DA2B8EA94C00F947AB /* Embrace ESGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5360F0E32B8EA94C00F947AB /* Embrace ESGUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5360F0F42B8EA94C00F947AB /* Build configuration list for PBXNativeTarget "Embrace ESGUITests" */;
+			buildPhases = (
+				5360F0E02B8EA94C00F947AB /* Sources */,
+				5360F0E12B8EA94C00F947AB /* Frameworks */,
+				5360F0E22B8EA94C00F947AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5360F0E62B8EA94C00F947AB /* PBXTargetDependency */,
+			);
+			name = "Embrace ESGUITests";
+			productName = "Embrace ESGUITests";
+			productReference = 5360F0E42B8EA94C00F947AB /* Embrace ESGUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5360F0BC2B8EA94A00F947AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5360F0C32B8EA94A00F947AB = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					5360F0D92B8EA94C00F947AB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 5360F0C32B8EA94A00F947AB;
+					};
+					5360F0E32B8EA94C00F947AB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 5360F0C32B8EA94A00F947AB;
+					};
+				};
+			};
+			buildConfigurationList = 5360F0BF2B8EA94A00F947AB /* Build configuration list for PBXProject "Embrace ESG" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5360F0BB2B8EA94A00F947AB;
+			productRefGroup = 5360F0C52B8EA94A00F947AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5360F0C32B8EA94A00F947AB /* Embrace ESG */,
+				5360F0D92B8EA94C00F947AB /* Embrace ESGTests */,
+				5360F0E32B8EA94C00F947AB /* Embrace ESGUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5360F0C22B8EA94A00F947AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5360F0D52B8EA94B00F947AB /* Preview Assets.xcassets in Resources */,
+				5360F0D12B8EA94B00F947AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5360F0D82B8EA94C00F947AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5360F0E22B8EA94C00F947AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5360F0C02B8EA94A00F947AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5360F0C82B8EA94A00F947AB /* Embrace_ESGApp.swift in Sources */,
+				5360F0CD2B8EA94A00F947AB /* Embrace_ESG.xcdatamodeld in Sources */,
+				5360F0CF2B8EA94A00F947AB /* ContentView.swift in Sources */,
+				5360F0CA2B8EA94A00F947AB /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5360F0D62B8EA94C00F947AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5360F0DF2B8EA94C00F947AB /* Embrace_ESGTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5360F0E02B8EA94C00F947AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5360F0EB2B8EA94C00F947AB /* Embrace_ESGUITestsLaunchTests.swift in Sources */,
+				5360F0E92B8EA94C00F947AB /* Embrace_ESGUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5360F0DC2B8EA94C00F947AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5360F0C32B8EA94A00F947AB /* Embrace ESG */;
+			targetProxy = 5360F0DB2B8EA94C00F947AB /* PBXContainerItemProxy */;
+		};
+		5360F0E62B8EA94C00F947AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5360F0C32B8EA94A00F947AB /* Embrace ESG */;
+			targetProxy = 5360F0E52B8EA94C00F947AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5360F0EC2B8EA94C00F947AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5360F0ED2B8EA94C00F947AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5360F0EF2B8EA94C00F947AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Embrace ESG/Embrace_ESG.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Embrace ESG/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esg.Embrace-ESG";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5360F0F02B8EA94C00F947AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Embrace ESG/Embrace_ESG.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Embrace ESG/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esg.Embrace-ESG";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5360F0F22B8EA94C00F947AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esg.Embrace-ESGTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Embrace ESG.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Embrace ESG";
+			};
+			name = Debug;
+		};
+		5360F0F32B8EA94C00F947AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esg.Embrace-ESGTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Embrace ESG.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Embrace ESG";
+			};
+			name = Release;
+		};
+		5360F0F52B8EA94C00F947AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esg.Embrace-ESGUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Embrace ESG";
+			};
+			name = Debug;
+		};
+		5360F0F62B8EA94C00F947AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esg.Embrace-ESGUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Embrace ESG";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5360F0BF2B8EA94A00F947AB /* Build configuration list for PBXProject "Embrace ESG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5360F0EC2B8EA94C00F947AB /* Debug */,
+				5360F0ED2B8EA94C00F947AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5360F0EE2B8EA94C00F947AB /* Build configuration list for PBXNativeTarget "Embrace ESG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5360F0EF2B8EA94C00F947AB /* Debug */,
+				5360F0F02B8EA94C00F947AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5360F0F12B8EA94C00F947AB /* Build configuration list for PBXNativeTarget "Embrace ESGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5360F0F22B8EA94C00F947AB /* Debug */,
+				5360F0F32B8EA94C00F947AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5360F0F42B8EA94C00F947AB /* Build configuration list for PBXNativeTarget "Embrace ESGUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5360F0F52B8EA94C00F947AB /* Debug */,
+				5360F0F62B8EA94C00F947AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5360F0CB2B8EA94A00F947AB /* Embrace_ESG.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5360F0CC2B8EA94A00F947AB /* Embrace_ESG.xcdatamodel */,
+			);
+			currentVersion = 5360F0CC2B8EA94A00F947AB /* Embrace_ESG.xcdatamodel */;
+			path = Embrace_ESG.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5360F0BC2B8EA94A00F947AB /* Project object */;
+}
