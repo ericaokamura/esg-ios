@@ -17,4 +17,5 @@ struct Embrace_ESGApp: App {
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
+    
 }

@@ -16,6 +16,9 @@
 		5360F0DF2B8EA94C00F947AB /* Embrace_ESGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0DE2B8EA94C00F947AB /* Embrace_ESGTests.swift */; };
 		5360F0E92B8EA94C00F947AB /* Embrace_ESGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0E82B8EA94C00F947AB /* Embrace_ESGUITests.swift */; };
 		5360F0EB2B8EA94C00F947AB /* Embrace_ESGUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0EA2B8EA94C00F947AB /* Embrace_ESGUITestsLaunchTests.swift */; };
+		5360F0F82B9250DE00F947AB /* ActivitiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0F72B9250DE00F947AB /* ActivitiesListView.swift */; };
+		5360F0FD2B92554700F947AB /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0FC2B92554700F947AB /* Activity.swift */; };
+		5360F1002B926E7100F947AB /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0FF2B926E7100F947AB /* ActivityService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,7 @@
 		5360F0C72B8EA94A00F947AB /* Embrace_ESGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Embrace_ESGApp.swift; sourceTree = "<group>"; };
 		5360F0C92B8EA94A00F947AB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		5360F0CC2B8EA94A00F947AB /* Embrace_ESG.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Embrace_ESG.xcdatamodel; sourceTree = "<group>"; };
-		5360F0CE2B8EA94A00F947AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5360F0CE2B8EA94A00F947AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		5360F0D02B8EA94B00F947AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5360F0D22B8EA94B00F947AB /* Embrace_ESG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Embrace_ESG.entitlements; sourceTree = "<group>"; };
 		5360F0D42B8EA94B00F947AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		5360F0E42B8EA94C00F947AB /* Embrace ESGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Embrace ESGUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5360F0E82B8EA94C00F947AB /* Embrace_ESGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Embrace_ESGUITests.swift; sourceTree = "<group>"; };
 		5360F0EA2B8EA94C00F947AB /* Embrace_ESGUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Embrace_ESGUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5360F0F72B9250DE00F947AB /* ActivitiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListView.swift; sourceTree = "<group>"; };
+		5360F0FC2B92554700F947AB /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		5360F0FF2B926E7100F947AB /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,12 @@
 		5360F0C62B8EA94A00F947AB /* Embrace ESG */ = {
 			isa = PBXGroup;
 			children = (
+				5360F0FE2B926E6000F947AB /* Service */,
+				5360F0FB2B92552500F947AB /* Model */,
 				5360F0C72B8EA94A00F947AB /* Embrace_ESGApp.swift */,
 				5360F0C92B8EA94A00F947AB /* Persistence.swift */,
 				5360F0CE2B8EA94A00F947AB /* ContentView.swift */,
+				5360F0F72B9250DE00F947AB /* ActivitiesListView.swift */,
 				5360F0D02B8EA94B00F947AB /* Assets.xcassets */,
 				5360F0D22B8EA94B00F947AB /* Embrace_ESG.entitlements */,
 				5360F0CB2B8EA94A00F947AB /* Embrace_ESG.xcdatamodeld */,
@@ -133,6 +142,22 @@
 				5360F0EA2B8EA94C00F947AB /* Embrace_ESGUITestsLaunchTests.swift */,
 			);
 			path = "Embrace ESGUITests";
+			sourceTree = "<group>";
+		};
+		5360F0FB2B92552500F947AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5360F0FC2B92554700F947AB /* Activity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5360F0FE2B926E6000F947AB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5360F0FF2B926E7100F947AB /* ActivityService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5360F1002B926E7100F947AB /* ActivityService.swift in Sources */,
+				5360F0FD2B92554700F947AB /* Activity.swift in Sources */,
 				5360F0C82B8EA94A00F947AB /* Embrace_ESGApp.swift in Sources */,
+				5360F0F82B9250DE00F947AB /* ActivitiesListView.swift in Sources */,
 				5360F0CD2B8EA94A00F947AB /* Embrace_ESG.xcdatamodeld in Sources */,
 				5360F0CF2B8EA94A00F947AB /* ContentView.swift in Sources */,
 				5360F0CA2B8EA94A00F947AB /* Persistence.swift in Sources */,
