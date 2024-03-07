@@ -26,8 +26,8 @@ Esta API foi desenvolvida para auxiliar na gestão de atividades de usuários. E
 
 ## Tecnologias Utilizadas
 
-- Linguagem = Swift: Para a construção da interface do usuário
-- Framework =  UIKit
+- Linguagem: Swift
+- Framework: UIKit
 
 ## Para acessar o código do backend associado a esta API, visite o [repositório aqui](https://github.com/ericaokamura/esg-app-fiap).
 
