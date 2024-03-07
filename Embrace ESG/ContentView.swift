@@ -103,7 +103,7 @@ struct ContentView: View {
                     .padding(50)
                     
                     
-                    NavigationLink(destination: ActivitiesListView(activities: atividades),
+                    NavigationLink(destination: ActivitiesListView(),
                                                    isActive: self.$navigationFlag,
                                                    label: {
                                                         
@@ -120,11 +120,7 @@ struct ContentView: View {
     func salvarAtividade(_ activity: Activity) async throws {
         try await service.saveActivity(activity)
     }
-    
-    func getAtividades() async throws {
-        let atividades = try await service.retornaAtividades(1)
-        self.atividades = atividades
-    }
+
 
 }
     

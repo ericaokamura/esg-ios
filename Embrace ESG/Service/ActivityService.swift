@@ -26,9 +26,8 @@ class ActivityService {
     
     func retornaAtividades(_ usuarioId: Int64) async throws -> [Activity] {
         
-        let usuario = try JSONEncoder().encode(usuarioId)
 
-        guard let url = URL(string: "http://localhost:8080/atividades/usuarios/\(usuario)") else {
+        guard let url = URL(string: "http://localhost:8080/atividades/usuarios/\(usuarioId)") else {
             return []
         }
     
@@ -38,8 +37,8 @@ class ActivityService {
         
         let (data, _) =  try await URLSession.shared.data(for: request)
         
-        let returnObject = try JSONSerialization.jsonObject(with: data) as? [Activity]
+        let returnObject = try JSONDecoder().decode([Activity].self, from: data)
         
-        return returnObject!
+        return returnObject
     }
 }

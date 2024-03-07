@@ -19,6 +19,7 @@
 		5360F0F82B9250DE00F947AB /* ActivitiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0F72B9250DE00F947AB /* ActivitiesListView.swift */; };
 		5360F0FD2B92554700F947AB /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0FC2B92554700F947AB /* Activity.swift */; };
 		5360F1002B926E7100F947AB /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F0FF2B926E7100F947AB /* ActivityService.swift */; };
+		5360F1042B99E6FD00F947AB /* ActivityTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360F1032B99E6FD00F947AB /* ActivityTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		5360F0F72B9250DE00F947AB /* ActivitiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListView.swift; sourceTree = "<group>"; };
 		5360F0FC2B92554700F947AB /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		5360F0FF2B926E7100F947AB /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
+		5360F1032B99E6FD00F947AB /* ActivityTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				5360F0C92B8EA94A00F947AB /* Persistence.swift */,
 				5360F0CE2B8EA94A00F947AB /* ContentView.swift */,
 				5360F0F72B9250DE00F947AB /* ActivitiesListView.swift */,
+				5360F1032B99E6FD00F947AB /* ActivityTableView.swift */,
 				5360F0D02B8EA94B00F947AB /* Assets.xcassets */,
 				5360F0D22B8EA94B00F947AB /* Embrace_ESG.entitlements */,
 				5360F0CB2B8EA94A00F947AB /* Embrace_ESG.xcdatamodeld */,
@@ -292,6 +295,7 @@
 			files = (
 				5360F1002B926E7100F947AB /* ActivityService.swift in Sources */,
 				5360F0FD2B92554700F947AB /* Activity.swift in Sources */,
+				5360F1042B99E6FD00F947AB /* ActivityTableView.swift in Sources */,
 				5360F0C82B8EA94A00F947AB /* Embrace_ESGApp.swift in Sources */,
 				5360F0F82B9250DE00F947AB /* ActivitiesListView.swift in Sources */,
 				5360F0CD2B8EA94A00F947AB /* Embrace_ESG.xcdatamodeld in Sources */,

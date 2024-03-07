@@ -8,7 +8,7 @@ import SwiftUI
 
 struct ActivitiesListView: View {
         
-    @State var activities = [Activity("Horta", "Horta", "VOLUNTARIADO")]
+    @State var activities: [Activity] = []
     var service = ActivityService()
     
     var body: some View {
@@ -23,17 +23,9 @@ struct ActivitiesListView: View {
                         .foregroundColor(Color.indigo)
                         .font(.system(size: 36))
                         .fontWeight(.bold)
+                        .padding(50)
                 
-                    Table(of: Activity.self) {
-                        TableColumn("Título", value: \.titulo)
-                        TableColumn("Descrição", value: \.descricao)
-
-                    } rows: {
-                        ForEach(activities) { activity in
-                            TableRow(activity)
-                                
-                        }
-                    }
+                    ActivityTableView(activities: activities)
                     
                 }.onAppear() {
                     Task{
@@ -45,14 +37,10 @@ struct ActivitiesListView: View {
                         } catch {
                             print(error.localizedDescription)
                         }
-                        
                     }
                 }
-                
             }
-        
         }
-    
     }
     
     func getAtividades() async throws {
@@ -63,6 +51,6 @@ struct ActivitiesListView: View {
 
 struct ActivitiesListView_Previews: PreviewProvider {
     static var previews: some View {
-        ActivitiesListView(activities: [])
+        ActivitiesListView()
     }
 }
