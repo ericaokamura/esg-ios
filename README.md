@@ -5,7 +5,7 @@ Este projeto é parte do curso de Desenvolvimento iOS da FIAP, focado na integra
 ## Descrição
 
 O objetivo deste projeto é desenvolver um aplicativo iOS que integra serviços web relacionados ao tema ESG (Environmental, Social and Governance - Ambiental, Social e Governança).
-
+## API de Gerenciamento de Atividades
 Esta API foi desenvolvida para auxiliar na gestão de atividades de usuários. Ela oferece dois endpoints principais: um para salvar atividades e outro para retornar atividades por usuário.
 
 ## Endpoints
@@ -29,7 +29,7 @@ Esta API foi desenvolvida para auxiliar na gestão de atividades de usuários. E
 - Linguagem = Swift: Para a construção da interface do usuário
 - Framework =  UIKit
 
-##Para acessar o código do backend associado a esta API, visite o [repositório aqui] (Repositório do Backend](https://github.com/ericaokamura/esg-app-fiap).
+## Para acessar o código do backend associado a esta API, visite o [repositório aqui](https://github.com/ericaokamura/esg-app-fiap).
 
 
 
