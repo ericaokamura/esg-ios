@@ -41,7 +41,7 @@ struct ContentView: View {
                         .font(.system(size: 20))
                         .fontWeight(.bold)
                         .frame(width: 400, height: 300)
-                        .padding(-150)
+                        .padding(-200)
                     
                     TextField("Dê um título para a sua atividade", text: $titulo)
                         .frame(width: 350, height: 300)
@@ -79,17 +79,17 @@ struct ContentView: View {
                         Text("HABITOS_ALIMENTARES_SAUDAVEIS").tag(5)
                             .foregroundColor(Color.indigo)
                     }
-                   .accentColor(.indigo)
-                   .padding(60)
+                           .accentColor(.indigo)
+                           .padding(60)
                     
                     
                     Button(action: {
                         
                         self.navigationFlag = true
-                    
+                        
                         Task{
                             do {
-                                try await salvarAtividade(Activity(titulo, descricao, "VOLUNTARIADO"))
+                                try await salvarAtividade(Activity(titulo, descricao, retornaCategoria(selection)))
                             } catch {
                                 print(error.localizedDescription)
                             }
@@ -104,17 +104,29 @@ struct ContentView: View {
                     
                     
                     NavigationLink(destination: ActivitiesListView(),
-                                                   isActive: self.$navigationFlag,
-                                                   label: {
-                                                        
-                                                   })
+                                   isActive: self.$navigationFlag,
+                                   label: {
+                        
+                    })
                     
                 }
                 
             }
-            .frame(width: 1000, height: 1000)
             
         }
+    }
+    
+    func retornaCategoria(_ selection: Int) -> String {
+        var categoria = ""
+        switch(selection) {
+            case 1: categoria = "VOLUNTARIADO"
+            case 2: categoria = "COLETA_SELETIVA"
+            case 3: categoria = "CULTIVO_HORTA_DOMESTICA"
+            case 4: categoria = "PRATICA_ATIVIDADES_FISICAS"
+            case 5: categoria = "HABITOS_ALIMENTARES_SAUDAVEIS"
+            default: categoria = "VOLUNTARIADO"
+        }
+        return categoria
     }
     
     func salvarAtividade(_ activity: Activity) async throws {

@@ -7,10 +7,7 @@
 import SwiftUI
 
 struct ActivitiesListView: View {
-        
-    @State var activities: [Activity] = []
-    var service = ActivityService()
-    
+
     var body: some View {
     
         NavigationView {
@@ -25,28 +22,13 @@ struct ActivitiesListView: View {
                         .fontWeight(.bold)
                         .padding(50)
                 
-                    ActivityTableView(activities: activities)
+                    ActivityTableView()
                     
-                }.onAppear() {
-                    Task{
-                        
-                        do {
-                            
-                          try await getAtividades()
-                            
-                        } catch {
-                            print(error.localizedDescription)
-                        }
-                    }
                 }
             }
         }
     }
-    
-    func getAtividades() async throws {
-        let atividades = try await service.retornaAtividades(1)
-        self.activities = atividades
-    }
+
 }
 
 struct ActivitiesListView_Previews: PreviewProvider {

@@ -9,8 +9,6 @@ import Foundation
 
 struct Activity: Codable, Identifiable {
     
-    var id: Int64
-        
     var titulo: String
     
     var descricao: String
@@ -20,6 +18,8 @@ struct Activity: Codable, Identifiable {
     var criadoEm: String
 
     var usuarioId: Int32
+    
+    var id: Int
     
     init(_ titulo: String, _ descricao: String, _ categoria: String) {
         self.id = -1

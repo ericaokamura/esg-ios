@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ActivityTableView: View {
     
-    @State var activities: [Activity]
+    @State var activities: [Activity] = []
     var service = ActivityService()
     
     #if os(iOS)
@@ -20,43 +20,43 @@ struct ActivityTableView: View {
     #endif
     
     @State private var sortOrder = [KeyPathComparator(\Activity.criadoEm)]
-
+    
 
     var body: some View {
         
         NavigationView {
-                            
             
-                VStack {
                     
-                    Table(activities, sortOrder: $sortOrder) {
-                        TableColumn("Título") { activity in
-                            HStack() {
-                                if isCompact {
-                                    Text(activity.descricao)
-                                        .foregroundStyle(.secondary)
-                                        .frame(width: 100)
-                                }
-                            }
-                        }
-                        TableColumn("Descrição") { activity in
-                            HStack() {
-                                if isCompact {
-                                    Text(activity.descricao)
-                                        .foregroundStyle(.secondary)
-                                }
-                            }
-                        }
-                    }.task {
-                        do {
-                            self.activities = try await getAtividades()
-                        } catch {
-                            print(error.localizedDescription)
+            Table(activities, sortOrder: $sortOrder) {
+            
+                TableColumn("") { activity in
+                    
+                    HStack() {
+                        if isCompact {
+                            Text(activity.titulo)
+                                .foregroundStyle(.indigo)
+                                .frame(width: 80)
+                            Divider()
+                            Text(activity.descricao)
+                                .foregroundStyle(.indigo)
+                                .frame(width: 100)
+                            Divider()
+                            Text(activity.categoria)
+                                .foregroundColor(.indigo)
+                                .frame(width: 200)
                         }
                     }
-
                 }
-                
+            
+            }.task {
+                do {
+                    self.activities = try await getAtividades()
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+            
+             
         }
         
     }
@@ -69,6 +69,8 @@ struct ActivityTableView: View {
 
 struct ActivityTableView_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityTableView(activities: [])
+        NavigationStack {
+            ActivityTableView()
+        }
     }
 }
