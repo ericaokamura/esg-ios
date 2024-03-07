@@ -26,9 +26,9 @@ struct Activity: Codable, Identifiable {
         self.titulo = titulo
         self.descricao = descricao
         self.categoria = categoria
-        //let formatter = DateFormatter()
-        //formatter.dateFormat = "yyyy-MM-dd"
-        self.criadoEm = "2024-03-01T20:09:09.000"
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.sss"
+        self.criadoEm = formatter.string(from: Date())
         self.usuarioId = 1
     }
 }
