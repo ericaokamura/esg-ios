@@ -15,8 +15,8 @@ Esta API foi desenvolvida para auxiliar na gestão de atividades de usuários. E
 - Descrição: Este endpoint permite que os usuários salvem uma nova atividade.
 
 2. **Retornar Atividades por Usuário**
-   - Método: GET
-   - Descrição: Este endpoint retorna todas as atividades associadas a um usuário específico.
+- Método: GET
+- Descrição: Este endpoint retorna todas as atividades associadas a um usuário específico.
    
 ## Funcionalidades
 
