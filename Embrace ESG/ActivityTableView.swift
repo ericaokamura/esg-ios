@@ -26,7 +26,6 @@ struct ActivityTableView: View {
         
         NavigationView {
             
-                    
             Table(activities, sortOrder: $sortOrder) {
             
                 TableColumn("") { activity in
@@ -34,11 +33,11 @@ struct ActivityTableView: View {
                     HStack() {
                         if isCompact {
                             Text(activity.titulo)
-                                .foregroundStyle(.indigo)
+                                .foregroundColor(.indigo)
                                 .frame(width: 80)
                             Divider()
                             Text(activity.descricao)
-                                .foregroundStyle(.indigo)
+                                .foregroundColor(.indigo)
                                 .frame(width: 100)
                             Divider()
                             Text(activity.categoria)
@@ -55,8 +54,7 @@ struct ActivityTableView: View {
                     print(error.localizedDescription)
                 }
             }
-            
-             
+          
         }
         
     }

@@ -14,10 +14,10 @@
             filePath = "Embrace ESG/ActivityTableView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "getAtividades()"
-            landmarkType = "7">
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "ActivityTableView"
+            landmarkType = "14">
             <Locations>
                <Location
                   uuid = "F98B2FA3-973D-4D02-AD7B-FF8728FA0E31 - a5135617bc7d7391"
