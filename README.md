@@ -18,7 +18,7 @@ Esta API foi desenvolvida para auxiliar na gestão de atividades de usuários. E
 - Método: GET
 - Descrição: Este endpoint retorna todas as atividades associadas a um usuário específico.
    
-## Tecnologias Utilizadas
+## Tecnologia Utilizada
 
 - Swift
 
