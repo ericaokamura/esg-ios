@@ -18,16 +18,9 @@ Esta API foi desenvolvida para auxiliar na gestão de atividades de usuários. E
 - Método: GET
 - Descrição: Este endpoint retorna todas as atividades associadas a um usuário específico.
    
-## Funcionalidades
+## Tecnologia Utilizada
 
-- Autenticação de usuários.
-- Visualização de informações relacionadas ao ESG.
-- Integração com APIs de terceiros para obter dados atualizados sobre questões ambientais, sociais e de governança.
-
-## Tecnologias Utilizadas
-
-- Linguagem: Swift
-- Framework: UIKit
+- Swift
 
 ## Para acessar o código do backend associado a esta API, visite o [repositório aqui](https://github.com/ericaokamura/esg-app-fiap).
 

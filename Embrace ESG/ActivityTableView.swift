@@ -8,60 +8,87 @@
 import SwiftUI
 
 struct ActivityTableView: View {
-    
-    @State var activities: [Activity] = []
+    @State private var activities: [Activity] = []
     var service = ActivityService()
-    
-    #if os(iOS)
-    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
-    private var isCompact: Bool { horizontalSizeClass == .compact }
-    #else
-    private let isCompact = false
-    #endif
-    
+
     @State private var sortOrder = [KeyPathComparator(\Activity.criadoEm)]
-    
 
     var body: some View {
-        
         NavigationView {
-            
-            Table(activities, sortOrder: $sortOrder) {
-            
-                TableColumn("") { activity in
-                    
-                    HStack() {
-                        if isCompact {
-                            Text(activity.titulo)
-                                .foregroundColor(.indigo)
-                                .frame(width: 80)
-                            Divider()
-                            Text(activity.descricao)
-                                .foregroundColor(.indigo)
-                                .frame(width: 100)
-                            Divider()
-                            Text(activity.categoria)
-                                .foregroundColor(.indigo)
-                                .frame(width: 200)
+            ScrollView {
+                LazyVStack {
+                    Section(header: headerView()) {
+                        ForEach(activities) { activity in
+                            HStack {
+                                Text(activity.titulo)
+                                    .foregroundColor(.indigo)
+                                    .frame(width: 80)
+                                    .lineLimit(nil)
+                                    .multilineTextAlignment(.leading)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                Divider()
+                                Text(activity.descricao)
+                                    .foregroundColor(.indigo)
+                                    .frame(width: 100)
+                                    .lineLimit(nil)
+                                    .multilineTextAlignment(.leading)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                Divider()
+                                Text(retornaCategoria(activity.categoria))
+                                    .foregroundColor(.indigo)
+                                    .frame(width: 200)
+                                    .lineLimit(nil)
+                                    .multilineTextAlignment(.leading)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
                         }
                     }
                 }
-            
-            }.task {
-                do {
-                    self.activities = try await getAtividades()
-                } catch {
-                    print(error.localizedDescription)
+                .background(Color.white)
+                .listStyle(InsetGroupedListStyle())
+                .task {
+                    do {
+                        self.activities = try await getAtividades()
+                    } catch {
+                        print(error.localizedDescription)
+                    }
                 }
             }
-          
+            .background(Color.white)
         }
-        
+    }
+
+    func headerView() -> some View {
+        HStack {
+            Text("Título")
+                .font(.headline)
+                .frame(width: 80)
+            Divider()
+            Text("Descrição")
+                .font(.headline)
+                .frame(width: 100)
+            Divider()
+            Text("Categoria")
+                .font(.headline)
+                .frame(width: 200)
+        }
+    }
+
+    func getAtividades() async throws -> [Activity] {
+        return try await service.retornaAtividades(1)
     }
     
-    func getAtividades() async throws -> [Activity] {
-        let atividades = try await service.retornaAtividades(1)
-        return atividades
+    func retornaCategoria(_ categoria: String) -> String {
+        var cat = ""
+        switch categoria {
+            case "VOLUNTARIADO": cat = "VOLUNTARIADO"
+            case "COLETA_SELETIVA": cat = "COLETA SELETIVA"
+            case "CULTIVO_HORTA_DOMESTICA": cat = "CULTIVO DE HORTA DOMÉSTICA"
+            case "PRATICA_ATIVIDADES_FISICAS": cat = "PRÁTICA DE ATIVIDADES FÍSICAS"
+            case "HABITOS_ALIMENTARES_SAUDAVEIS": return "HÁBITOS ALIMENTARES SAUDÁVEIS"
+            default: return ""
+        }
+        return cat
     }
 }
 
